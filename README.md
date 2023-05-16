@@ -8,8 +8,8 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 ## Links
 
-- Solution URL:()
-- Live Site URL:()
+- Solution URL:(https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-tW2r93164G)
+- Live Site URL:(https://mohamed806h.github.io/Sunnyside-agency-landing-page-main/)
 
 ## Built with
 
