@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+:root {
+  --font-base: "Barlow", sans-serif;
+  --font-alt: "Fraunces", serif;
+  --clr-SoftRed: hsl(7, 99%, 70%);
+  --clr-Yellow: hsl(51, 100%, 49%);
+  --clr-DarkDesaturatedCyan: hsl(167, 40%, 24%);
+  --clr-DarkBlue: hsl(198, 62%, 26%);
+  --clr-DarkModerateCyan: hsl(168, 34%, 41%);
+  --clr-VeryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+  --clr-VeryDarkGrayishBlue: hsl(213, 9%, 39%);
+  --clr-DarkGrayishBlue: hsl(232, 10%, 55%);
+  --clr-GrayishBlue: hsl(210, 4%, 67%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul[role="list"],
+ol[role="list"],
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100%;
+  font-family: var(--font-base);
+  overflow-x: hidden;
+  text-rendering: optimizeSpeed;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+a {
+  text-decoration: none;
+}
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.section {
+  width: 720px;
+  height: 600px;
+}
+@media screen and (max-width: 35em) {
+  .section {
+    width: 375px;
+    height: 440px;
+  }
+}
+.same_h2 {
+  font-family: var(--font-alt);
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: 0.01em;
+  color: var(--clr-VeryDarkDesaturatedBlue);
+  line-height: 49px;
+}
+@media screen and (max-width: 35em) {
+  .same_h2 {
+    line-height: 39px;
+    font-size: 32px;
+    text-align: center;
+  }
+}
+.same_p {
+  width: 450px;
+  font-family: var(--font-base);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--clr-DarkGrayishBlue);
+}
+@media screen and (max-width: 35em) {
+  .same_p {
+    text-align: center;
+  }
+}
+.highlight_btn {
+  font-family: var(--font-alt);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: var(--clr-VeryDarkDesaturatedBlue);
+  border: none;
+  background: none;
+  z-index: 2;
+}
+@media screen and (max-width: 35em) {
+  .highlight_btn {
+    font-size: 15px;
+    letter-spacing: 0.09em;
+  }
+}
+.highlight {
+  width: 137px;
+  height: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
